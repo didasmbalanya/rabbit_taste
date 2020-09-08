@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Grand+Hotel&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --slantedText: "Grand Hotel", cursive;
+  --primaryColor: #698f3f;
+  --secondaryColor: #fca311;
+  --mainDark: #3a3e3b;
+  --mainwhite: #fff;
+  --mainGray: #e5e5e5;
+  --mainTransition: all 0.3 ease-in-out;
+  --letterSpacing: 0.5rem;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.5;
+}
+.red {
+  margin: 20px 20px;
+  padding: 10px 10px;
+  border: 1px solid red;
+  width: 5vw;
+  height: 10vh;
+  transition: all 1s;
+}
+
+
