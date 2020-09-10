@@ -42,7 +42,34 @@ a {
 /* end helper utilities */
 
 /* clearfix */
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* end clearfix */
 /* globals */
+.section-center {
+  padding: 4rem 0;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-family: var(--slantedText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+  color: var(--primaryColor);
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* end globals */
 /* navbar */
 /* headers */
 
@@ -127,6 +154,181 @@ a {
 }
 /* end of content divider */
 
+/* products sections */
+.products {
+  background: var(--mainGray);
+}
+
+.product {
+  /* height: 50vh; */
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--mainTransition);
+}
+.product:hover {
+  background: var(--primaryColor);
+}
+
+.product-icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: var(--mainTransition);
+}
+
+.product:hover .product-icon {
+  transform: translateY(-5px);
+}
+
+.product-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+}
+.product:hover .product-title {
+  color: var(--mainwhite);
+}
+
+.product-text {
+  max-width: 13rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .product {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .product {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product {
+    width: 25%;
+  }
+}
+
+/* end products sections */
+
+/* about */
+
+.about-picture {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransition);
+}
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-picture-container {
+  background: var(--primaryColor);
+  border: 0.5rem solid var(--primaryColor);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text {
+  padding: 1rem 0;
+  max-width: 26rem;
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+    padding: 2rem;
+  }
+}
+/* end of about */
+
+/* species */
+.species {
+  background: var(--mainDark);
+}
+
+.species-info,
+.species-inventory {
+  padding: 2rem 0;
+}
+.specie-text {
+  color: var(--mainwhite);
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+
+.specie {
+  padding: 2rem 0;
+}
+
+.specie-image {
+  height: 40vh;
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.specie-title {
+  color: var(--mainwhite);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+  margin-bottom: 1rem;
+}
+
+.specie-price {
+  letter-spacing: var(--letterSpacing);
+  color: var(--primaryColor);
+  font-family: var(--slantedText);
+}
+
+@media screen and (min-width: 768px) {
+  .specie {
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+
+  .species-info {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .specie {
+    width: 33.3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .species-info {
+    float: left;
+    width: 30%;
+  }
+  .species-inventory {
+    float: left;
+    width: 70%;
+  }
+
+  .specie {
+    padding: 1.5rem 1rem 0 1rem;
+  }
+}
+/* end of species */
+
 /* animations */
 /* button */
 @keyframes show {
@@ -173,4 +375,5 @@ a {
 
 .red {
   height: 200px;
+  background-color: red;
 }
