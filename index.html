@@ -18,7 +18,27 @@
   </head>
   <body>
     <!-- nav button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <!-- end nav button -->
+
     <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-bar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-link" >Home</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#species" class="nav-link">Species</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar -->
+
     <!-- header -->
     <header class="header">
       <div class="banner">
@@ -34,7 +54,7 @@
     <!-- end content divider -->
 
     <!-- products section -->
-    <section class="products clearfix">
+    <section class="products clearfix" id="products">
       <!-- product 1 -->
       <article class="product">
         <span class="product-icon">
@@ -90,7 +110,7 @@
     <!-- end of products section -->
 
     <!-- about -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="section-center clearfix">
         <!-- first column -->
         <article class="about-img">
@@ -125,7 +145,7 @@
     <!-- end about -->
 
     <!-- Species -->
-    <article class="species">
+    <article class="species" id="species">
       <div class="section-center clearfix">
         <!-- specie info -->
         <article class="species-info">
@@ -290,5 +310,6 @@
       </div>
     </footer>
     <!-- end footer -->
+    <script src="./app.js"></script>
   </body>
 </html>
